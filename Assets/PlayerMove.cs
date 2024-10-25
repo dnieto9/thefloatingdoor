@@ -12,6 +12,8 @@ public class PlayerMove : MonoBehaviour
     public LayerMask UnwalkableLayer;
     public LayerMask MoveableLayer;
 
+    public GameObject panel;
+
     private void Awake()
     {
         targetPosition.position = transform.position;
@@ -45,7 +47,7 @@ public class PlayerMove : MonoBehaviour
         {
             movement = new Vector2(0, 0);
         }*/
-        if (Vector3.Distance(transform.position, targetPosition.position) < 0.1f)
+        if (Vector3.Distance(transform.position, targetPosition.position) < 0.1f && !Physics2D.OverlapCircle(targetPosition.position + new Vector3(movement.x, movement.y, 0f), .1f, UnwalkableLayer))
         {
             targetPosition.position = new Vector3(targetPosition.position.x + movement.x, targetPosition.position.y + movement.y, 0f);
             //transform.position = Vector3.MoveTowards(transform.position, targetPosition.position, speed * Time.deltaTime);
@@ -69,4 +71,13 @@ public class PlayerMove : MonoBehaviour
         Debug.Log("Key pressed");
     }
     */
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Staircase"))
+        {
+
+            Destroy(other.gameObject);
+            panel.SetActive(true);
+        }
+    }
 }

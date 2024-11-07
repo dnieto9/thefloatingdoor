@@ -10,7 +10,7 @@ public class PlayerMove : MonoBehaviour
     public Transform targetPosition;
     private Vector2 movement;
     private Rigidbody2D rb;
-    public Tilemap map;
+    //public Tilemap map;
     public LayerMask UnwalkableLayer;
     public LayerMask MoveableLayer;
 
@@ -88,7 +88,7 @@ public class PlayerMove : MonoBehaviour
             (input.x - input.y) * 0.5f,
             ((input.x + input.y) /2) * 0.5f
         );
-        Debug.Log(map.GetTile(map.WorldToCell(transform.position)) != null);
+        //Debug.Log(map.GetTile(map.WorldToCell(transform.position)) != null);
     }
     /*
     public void Update()

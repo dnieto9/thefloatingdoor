@@ -16,7 +16,6 @@ public class PlayerMove : MonoBehaviour
 
     public GameObject panel;
 
-    public Tilemap map;
 
     private void Awake()
     {
@@ -27,13 +26,14 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 targetPosition = rb.position + movement * speed * Time.fixedDeltaTime;
+        /*Vector2 targetPosition = rb.position + movement * speed * Time.fixedDeltaTime;
         Collider2D hitCollider = Physics2D.OverlapCircle(targetPosition, 0.1f, UnwalkableLayer);
         if (hitCollider == null)
         {
             rb.MovePosition(targetPosition);
         }
-        /*if (Vector3.Distance(transform.position, targetPosition.position) < 0.1f &&
+        */
+        if (Vector3.Distance(transform.position, targetPosition.position) < 0.1f &&
             !Physics2D.OverlapCircle(targetPosition.position + new Vector3(movement.x, movement.y, 0f), .1f, UnwalkableLayer))
         {
             Debug.Log("bojangles was here. aka I should be able to movein the direction I'm trying to");

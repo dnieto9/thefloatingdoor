@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Staircase
+  - UI
+  - Ground
   layers:
   - Default
   - TransparentFX

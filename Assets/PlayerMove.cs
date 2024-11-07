@@ -6,27 +6,35 @@ using UnityEngine.Tilemaps;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float speed = 10;
+    public float speed = 10f0;
     public Transform targetPosition;
     private Vector2 movement;
+    private Rigidbody2D rb;
     public Tilemap map;
     public LayerMask UnwalkableLayer;
     public LayerMask MoveableLayer;
 
     public GameObject panel;
 
+    public Tilemap map;
+
     private void Awake()
     {
-        targetPosition.position = transform.position;
+        rb = GetComponent<Rigidbody2D>();
+        //targetPosition.position = transform.position;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        //if the target and transforms 
-        // changed overlap circle diameter to like .9
-        if (Vector3.Distance(transform.position, targetPosition.position) < 0.1f &&
-            !Physics2D.OverlapCircle(targetPosition.position + new Vector3(movement.x, movement.y, 0f), 1f, UnwalkableLayer))
+        Vector2 targetPosition = rb.position + movement * speed * Time.fixedDeltaTime;
+        Collider2D hitCollider = Physics2D.OverlapCircle(targetPosition, 0.1f, UnwalkableLayer);
+        if (hitCollider == null)
+        {
+            rb.MovePosition(targetPosition);
+        }
+        /*if (Vector3.Distance(transform.position, targetPosition.position) < 0.1f &&
+            !Physics2D.OverlapCircle(targetPosition.position + new Vector3(movement.x, movement.y, 0f), .1f, UnwalkableLayer))
         {
             Debug.Log("bojangles was here. aka I should be able to movein the direction I'm trying to");
             Debug.Log(targetPosition.position);
@@ -57,14 +65,14 @@ public class PlayerMove : MonoBehaviour
     }
     private void OnMove(InputValue value)
     {
-        
-        movement = value.Get<Vector2>();
-        Debug.Log(movement);
-        /*if (movement.x != 0 && movement.y != 0)
+        /*movement = value.Get<Vector2>()* new Vector2(.5f, .5f);
+
+
+        if (movement.x != 0 && movement.y != 0)
         {
             movement = new Vector2(0, 0);
-        }*/
-        if (Vector3.Distance(transform.position, targetPosition.position) < 0.1f && !Physics2D.OverlapCircle(targetPosition.position + new Vector3(movement.x, movement.y, 0f), .1f, UnwalkableLayer))
+        }
+        if (map.GetTile(map.WorldToCell(targetPosition.position)) == false)
         {
             targetPosition.position = new Vector3(targetPosition.position.x + movement.x, targetPosition.position.y + movement.y, 0f);
             //transform.position = Vector3.MoveTowards(transform.position, targetPosition.position, speed * Time.deltaTime);
@@ -75,6 +83,12 @@ public class PlayerMove : MonoBehaviour
             targetPosition.position = new Vector3(transform.position.x + movement.x, transform.position.y + movement.y, 0f);
             transform.position = targetPosition.position;
         }*/
+        Vector2 input = value.Get<Vector2>();
+        movement = new Vector2(
+            (input.x - input.y) * 0.5f,
+            ((input.x + input.y) /2) * 0.5f
+        );
+        Debug.Log(map.GetTile(map.WorldToCell(transform.position)) != null);
     }
     /*
     public void Update()

@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float speed = 10f0;
+    public float speed = 10f;
     public Transform targetPosition;
     private Vector2 movement;
     private Rigidbody2D rb;

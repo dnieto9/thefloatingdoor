@@ -6,13 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Early_Prototypes/Isometric_Movement2.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/House.unity
+    path: Assets/Scenes/Prototype/Prototype_TileMap.unity
     guid: 4d326fd4f5d054e4fbc12bde60703968
   - enabled: 1
-    path: Assets/Scenes/TetrisHouse.unity
+    path: Assets/Scenes/Prototype/Prototype_Puzzle.unity
+    guid: a516c916cd2c3483e986afde09736c25
+  - enabled: 1
+    path: Assets/Scenes/Prototype/Prototype_Tetris.unity
     guid: 49d0c22d328a241f1a01cfd411a2d918
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: a8a4fe3e73c4e45efadcf070dfa341f4, type: 2}

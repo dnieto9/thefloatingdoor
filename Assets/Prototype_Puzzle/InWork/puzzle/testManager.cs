@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,16 +8,17 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement; // Import SceneManager
 
-
-public class PuzzleManager : MonoBehaviour
+public class testManager : MonoBehaviour
 {
-   public GameObject[] pieces;
-   public GameObject restart;
+    public int num;
+    public GameObject[] pieces;
+    public GameObject restart;
     public GameObject cont;
     // Start is called before the first frame update
-    public string nextSceneName; // Add the name of the next scene here
+    public string nextSceneName; // Add the name of the next scene heres
     private bool puzzlesDone;
-    public string test;
+
+
 
     void Start()
     {
@@ -50,7 +51,7 @@ public class PuzzleManager : MonoBehaviour
         for (int i = 0; i < pieces.Length; i++)
         {
             // Check if the piece has the script 'YourScriptName' attached
-            if (pieces[i].GetComponent<Piece>() != null && pieces[i].GetComponent<Piece>().done())
+            if (pieces[i].GetComponent<testPiece>() != null && pieces[i].GetComponent<testPiece>().done())
             {
                 count++;
             }
@@ -72,3 +73,4 @@ public class PuzzleManager : MonoBehaviour
 
     }
 }
+*/

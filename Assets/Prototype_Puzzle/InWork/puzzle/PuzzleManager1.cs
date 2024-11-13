@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using UnityEngine.UIElements;
 using UnityEngine.SceneManagement; // Import SceneManager
 
 
-public class PuzzleManager : MonoBehaviour
+public class PuzzleManager1 : MonoBehaviour
 {
    public GameObject[] pieces;
    public GameObject restart;
@@ -17,7 +17,6 @@ public class PuzzleManager : MonoBehaviour
     // Start is called before the first frame update
     public string nextSceneName; // Add the name of the next scene here
     private bool puzzlesDone;
-    public string test;
 
     void Start()
     {
@@ -71,4 +70,4 @@ public class PuzzleManager : MonoBehaviour
         SceneManager.LoadScene("chairtemp");
 
     }
-}
+}*/

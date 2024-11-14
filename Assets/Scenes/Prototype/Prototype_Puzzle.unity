@@ -1271,8 +1271,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1583548484}
-        m_TargetAssemblyTypeName: PuzzleManager, Assembly-CSharp
+      - m_Target: {fileID: 1583548485}
+        m_TargetAssemblyTypeName: PuzzleManager2, Assembly-CSharp
         m_MethodName: restartScene
         m_Mode: 1
         m_Arguments:
@@ -3971,7 +3971,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1583548483}
   - component: {fileID: 1583548484}
-  - component: {fileID: 1583548486}
   - component: {fileID: 1583548485}
   m_Layer: 0
   m_Name: puzzleManager1
@@ -4033,21 +4032,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1583548481}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e2fc7a464e364123af4863d0eb02a35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1583548486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583548481}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1798e29e4b4041aaa055aa3bb1466cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieces:
+  - {fileID: 392701710}
+  - {fileID: 233975222}
+  - {fileID: 1593995917}
+  - {fileID: 890140907}
+  - {fileID: 1494770445}
+  restart: {fileID: 550601251}
+  cont: {fileID: 1172917813}
+  nextSceneName: Prototype_Tetris
 --- !u!1 &1593995917
 GameObject:
   m_ObjectHideFlags: 0
@@ -4627,9 +4623,9 @@ SceneRoots:
   - {fileID: 948716551}
   - {fileID: 795188630}
   - {fileID: 1024952030}
-  - {fileID: 1583548483}
   - {fileID: 1045379826}
+  - {fileID: 183155879}
+  - {fileID: 1583548483}
   - {fileID: 1542571812}
   - {fileID: 391440424}
   - {fileID: 1851231934}
-  - {fileID: 183155879}

@@ -17,6 +17,7 @@ public class PuzzleManager2 : MonoBehaviour
     // Start is called before the first frame update
     public string nextSceneName; // Add the name of the next scene heres
     private bool puzzlesDone;
+    public string currentScene;
 
 
 
@@ -36,6 +37,7 @@ public class PuzzleManager2 : MonoBehaviour
 
         if (puzzlesDone)
         {
+
             cont.SetActive(true);
             restart.SetActive(false);
         }
@@ -62,6 +64,7 @@ public class PuzzleManager2 : MonoBehaviour
 
     }
 
+    
     public void puzzleComplete()
     {
         SceneManager.LoadScene(nextSceneName);
@@ -69,7 +72,7 @@ public class PuzzleManager2 : MonoBehaviour
 
     public void restartScene()
     {
-        SceneManager.LoadScene("chairtemp");
+        SceneManager.LoadScene(currentScene);
 
     }
 }

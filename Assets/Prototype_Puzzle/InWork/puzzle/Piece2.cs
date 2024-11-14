@@ -2,36 +2,36 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class Piece2 : MonoBehaviour
 {
-    public Vector3 correctLoc;
+    private Vector3 correctLoc;
     private Vector3 offset;
     private bool isDragging;
     private bool inPlace = false;
     private bool connected = false;
-    private float snapThreshold = 0.5f; // Threshold distance to snap into place
-
-    private int originalSortingOrder; // Stores the original sorting order
+    //private int originalSortingOrder; // Stores the original sorting order
     private SpriteRenderer spriteRenderer;
 
-    private Transform overlappingPiece;
-    private List<Piece2> connectedPieces = new List<Piece2>(); // Use a list to store connected pieces
-    // Start is called before the first frame update
+   private  List<Piece2> connectedPieces = new List<Piece2>();
+
+
     void Start()
     {
         correctLoc = transform.position;
+        Debug.Log(correctLoc);
         SetToRandomLocation();
 
         // Get the SpriteRenderer component and store the original sorting order
-        spriteRenderer = GetComponent<SpriteRenderer>();
+      /*  spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer != null)
         {
             originalSortingOrder = spriteRenderer.sortingOrder;
-        }
+        }*/
     }
 
 
@@ -39,12 +39,15 @@ public class Piece2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (connected)
-        {
+         if (connected & isDragging)
+         {
+        //     Debug.Log("HERE in Update");
             correctOthersLoc(); // Update position of connected pieces
         }
+       
 
-
+        
+       
 
     }
 
@@ -93,7 +96,9 @@ public class Piece2 : MonoBehaviour
             //  isOverlapping = true;
             Debug.Log("Overlapping with another piece.");
 
-            overlappingPiece = other.transform;
+            Piece2 pieceScript = other.GetComponent<Piece2>();
+
+            checkInPlace(pieceScript);
 
         }
     }
@@ -104,12 +109,14 @@ public class Piece2 : MonoBehaviour
         {
             // isOverlapping = false;
             Debug.Log("No longer overlapping.");
-            overlappingPiece = null;
+
+
+         //   overlappingPiece = null;
         }
     }
    
-    private void SetToRandomLocation() ///dont mess with this
-    {// Get the screen bounds in world coordinates
+ private void SetToRandomLocation() ///dont mess with this
+     {// Get the screen bounds in world coordinates
         Camera cam = Camera.main;
         float pieceWidth = GetComponent<Renderer>().bounds.size.x / 2;
         float pieceHeight = GetComponent<Renderer>().bounds.size.y / 2;
@@ -123,39 +130,79 @@ public class Piece2 : MonoBehaviour
 
         // Set the piece position to the random location
         transform.position = new Vector3(randomX, randomY, transform.position.z);
-    }
+     }
 
     private void correctOthersLoc()
     {
-        //connectedPieces // for loop and change location to relative to 
-        for (int i = 0; i< connectedPieces.Length; i++)
-        {
-           float correct_distance = Vector3.Distance(correctLoc, other.correctLoc);
+    
+     // Loop through each connected piece and set its position relative to the current piece
+     for (int i = 0; i < connectedPieces.Count; i++)
+     {
+        // Calculate the correct offset between the connected piece's correct location and this piece's correct location
+         Vector3 offset = connectedPieces[i].correctLoc - correctLoc;
+        
+        // Position the connected piece based on the offset
+         connectedPieces[i].transform.position = transform.position + offset;
+     }
 
-            connectedPieces[i].transform.position = transform.position + correct_distance;
-        } 
     }
 
     private void checkInPlace(Piece2 other) /// check if connected with other
     {
-        // Calculate the distance between the current position and the correct location
-        float curr_distance = Vector3.Distance(transform.position, other.transform.position);
-        float correct_distance = Vector3.Distance(correctLoc, other.correctLoc);
-        //Debug.Log(distance);
-        if (curr_distance.abs() <= correct_distance.abs())
-        {
-            connectedPieces += other;
-            connected = true;
-            other.connect;
+        
 
+// Calculate the difference between the current positions of the two pieces
+    float xDifference = Mathf.Abs(transform.position.x - other.transform.position.x);
+    float yDifference = Mathf.Abs(transform.position.y - other.transform.position.y);
+
+    // Calculate the difference between the correct positions for alignment check
+    float correctX = Mathf.Abs(correctLoc.x - other.correctLoc.x);
+    float correctY = Mathf.Abs(correctLoc.y - other.correctLoc.y);
+
+    // Define a small tolerance value for alignment
+    float tolerance = 0.1f; 
+
+    // Check if the pieces are close enough to each other and aligned correctly
+    if (xDifference <= correctX + tolerance && yDifference <= correctY + tolerance)
+    {
+        // If aligned within the correct distance, add the other piece to the connected pieces list
+        connectedPieces.Add(other);
+        other.addConnections(this);
+        connected = true;
+
+        List<Piece2> newConnects = other.connections();
+        if(newConnects.Count != 0){
+          for(int i = 0; i < newConnects.Count; i++) {
+            connectedPieces.Add(newConnects[i]);
         }
+        } 
+        if(connectedPieces.Count != 0){
+            for(int i = 0; i < connectedPieces.Count; i++) {
+                other.addConnections(connectedPieces[i]);
+       
+        }
+        }   
+        other.connected = true;
+        
+        
+        inPlace = true;
+        
     }
-    private void connect(){
-        return connected = true;
+
     }
+  
 
     public bool done()
     {
         return inPlace;
     }
+
+    public List<Piece2> connections(){
+        return connectedPieces;
+    }
+
+    public void addConnections(Piece2 other){
+        connectedPieces.Add(other);
+    }
+  
 }

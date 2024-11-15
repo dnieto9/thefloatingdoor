@@ -42,7 +42,6 @@ public class puzzlePiece : MonoBehaviour
     {
          if (connected & isDragging)
          {
-        //     Debug.Log("HERE in Update");
             correctOthersLoc(); // Update position of connected pieces
         }
        
@@ -63,14 +62,44 @@ public class puzzlePiece : MonoBehaviour
 
     }
 
-    void OnMouseDrag()
-    {
-        // If the piece is already in place, disable dragging
-      //  if (inPlace || !isDragging) return;
+    void OnMouseDrag(){
+         // Calculate the new position based on mouse position and offset
+    Vector3 newPosition = GetMouseWorldPosition() + offset;
 
-        transform.position = GetMouseWorldPosition() + offset;
+    // Clamp the new position to stay within screen bounds
+    Vector3 clampedPosition = ClampToScreenBounds(newPosition);
 
+    // Update the object's position
+    transform.position = clampedPosition;
     }
+
+    private Vector3 ClampToScreenBounds(Vector3 position)
+    {
+        Camera cam = Camera.main;
+    float pieceWidth = GetComponent<Renderer>().bounds.size.x / 2;
+    float pieceHeight = GetComponent<Renderer>().bounds.size.y / 2;
+
+    // Get screen bounds in world coordinates
+    Vector3 screenBottomLeft = cam.ViewportToWorldPoint(new Vector3(0, 0, cam.nearClipPlane));
+    Vector3 screenTopRight = cam.ViewportToWorldPoint(new Vector3(1, 1, cam.nearClipPlane));
+
+    // Clamp the position within screen bounds
+    position.x = Mathf.Clamp(position.x, screenBottomLeft.x + pieceWidth, screenTopRight.x - pieceWidth);
+    position.y = Mathf.Clamp(position.y, screenBottomLeft.y + pieceHeight, screenTopRight.y - pieceHeight);
+
+    return position;
+    }
+
+
+    // void OnMouseDrag()
+    // {
+
+
+    //     transform.position = GetMouseWorldPosition() + offset;
+
+    // }
+
+
 
     void OnMouseUp()
     {

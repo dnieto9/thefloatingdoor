@@ -11,13 +11,13 @@ using UnityEngine.SceneManagement; // Import SceneManager
 public class puzzlePieceManager : MonoBehaviour
 {
     public GameObject[] pieces;
-    public GameObject[] puzzle2;
+   // public GameObject[] puzzle2;
     public GameObject restart;
     public GameObject cont;
     // Start is called before the first frame update
     public string nextSceneName; // Add the name of the next scene heres
     private bool puzzlesDone;
-    private bool puzzlesDone2;
+   // private bool puzzlesDone2;
 
     public string currentScene;
 
@@ -36,10 +36,10 @@ public class puzzlePieceManager : MonoBehaviour
     void Update()
     {
         puzzlesDone = isdone(pieces);
-        puzzlesDone2 = isdone(puzzle2);
+      //  puzzlesDone2 = isdone(puzzle2);
 
 
-        if (puzzlesDone & puzzlesDone2)
+        if (puzzlesDone)// & puzzlesDone2)
         {
 
             cont.SetActive(true);

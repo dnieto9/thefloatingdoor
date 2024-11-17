@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
         float moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && (Mathf.Abs(rb.velocity.y) < 0.5)) //and Y velocity is zero
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }

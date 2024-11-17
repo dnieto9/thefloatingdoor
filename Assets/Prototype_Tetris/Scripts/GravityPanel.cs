@@ -14,7 +14,7 @@ public class GravityPanel : MonoBehaviour
         }
     }*/
 
-    private void OnTriggerExit2D(Collider2D other)
+    public void OnTriggerExit2D(Collider2D other)
     {
         Rigidbody2D rb = other.attachedRigidbody;
         if (rb != null)

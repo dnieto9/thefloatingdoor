@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Prototype/Prototype_Tetris.unity
     guid: 49d0c22d328a241f1a01cfd411a2d918
   - enabled: 1
-    path: Assets/Scenes/Prototype/Puzzles/Puzzle1.unity
+    path: Assets/Scenes/Prototype/Puzz_Lvl_2/Puzzle1.unity
     guid: 029f85810c91f404daa05b5a862a615a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: a8a4fe3e73c4e45efadcf070dfa341f4, type: 2}

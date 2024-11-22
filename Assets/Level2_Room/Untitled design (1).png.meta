@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1d4cbfa1cef39424380b89ef2c5baa2c
+guid: 42e0e9e202ca8e74f9b4b2d37e89c367
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 48
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,91 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: TopDownHouse_FloorsAndWalls_OpenDoors_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 0
-        width: 30
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a23d7d6a2f9ae5419d5b3ab4c9f8753
-      internalID: -266720539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TopDownHouse_FloorsAndWalls_OpenDoors_1
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 0
-        width: 30
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 260d3b670cd69014fa7f69e11bcc7000
-      internalID: -1401077624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TopDownHouse_FloorsAndWalls_OpenDoors_2
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 0
-        width: 30
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 846af11afdc1a83459204516feccf13f
-      internalID: -1490631319
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TopDownHouse_FloorsAndWalls_OpenDoors_3
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 0
-        width: 30
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59b5c050b39b8ad49999119e8fdd2677
-      internalID: -2117765369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -203,11 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      TopDownHouse_FloorsAndWalls_OpenDoors_0: -266720539
-      TopDownHouse_FloorsAndWalls_OpenDoors_1: -1401077624
-      TopDownHouse_FloorsAndWalls_OpenDoors_2: -1490631319
-      TopDownHouse_FloorsAndWalls_OpenDoors_3: -2117765369
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

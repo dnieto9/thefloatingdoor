@@ -8,6 +8,7 @@ TagManager:
   - UI
   - Ground
   - Heavy
+  - Piece
   layers:
   - Default
   - TransparentFX
@@ -19,8 +20,8 @@ TagManager:
   - Moveable
   - Unwalkable
   - UI-frfr
-  - 
-  - 
+  - UI2
+  - CPcs
   - 
   - 
   - 
@@ -44,4 +45,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: AboveFloor
+    uniqueID: 2616204423
     locked: 0

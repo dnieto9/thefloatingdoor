@@ -5,6 +5,7 @@ using UnityEngine;
 public class ButtonHandlerTileMap : MonoBehaviour
 {
     public GameObject panel;
+    public GameObject SpyPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -21,5 +22,6 @@ public class ButtonHandlerTileMap : MonoBehaviour
     public void Back()
     {
         panel.SetActive(false);
+        SpyPanel.SetActive(true);
     }
 }

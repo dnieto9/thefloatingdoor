@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prototype/Puzz_Lvl_2/Puzzle1.unity
     guid: 029f85810c91f404daa05b5a862a615a
+  - enabled: 1
+    path: Assets/Scenes/Level 2/Level2_Tetris.unity
+    guid: 30dbcd1107d0c4948b3ac8fdb4b8cc23
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: a8a4fe3e73c4e45efadcf070dfa341f4, type: 2}

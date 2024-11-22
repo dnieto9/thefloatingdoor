@@ -12,6 +12,7 @@ public class PlayerGrab2 : MonoBehaviour
     {
         foreach (Rigidbody2D rb in FindObjectsOfType<Rigidbody2D>())
         {
+            if (rb.CompareTag("Ground")) continue;
             ObjectGroundHandler lockScript = rb.GetComponent<ObjectGroundHandler>();
             if (lockScript != null && lockScript.isLocked) continue;
 
@@ -30,6 +31,7 @@ public class PlayerGrab2 : MonoBehaviour
             {
                 if (hit.collider.CompareTag("UI")) return;
                 if (hit.collider.CompareTag("Player")) return;
+                if (hit.collider.CompareTag("Ground")) return;
 
                 ObjectGroundHandler lockScript = hit.collider.GetComponent<ObjectGroundHandler>();
                 if (lockScript != null && lockScript.isLocked) return;

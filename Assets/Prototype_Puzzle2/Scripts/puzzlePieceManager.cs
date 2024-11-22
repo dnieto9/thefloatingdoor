@@ -12,6 +12,8 @@ public class puzzlePieceManager : MonoBehaviour
 {
     public GameObject[] pieces;
    // public GameObject[] puzzle2;
+    //public GameObject panel; // Reference to the UI panel
+
     public GameObject restart;
     public GameObject cont;
     // Start is called before the first frame update

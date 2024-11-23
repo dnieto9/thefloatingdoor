@@ -27,9 +27,7 @@ public class puzzlePieceManager : MonoBehaviour
 
     void Start()
     {
-
-
-
+        cont.gameObject.SetActive(false);
 
 
     }
@@ -43,7 +41,6 @@ public class puzzlePieceManager : MonoBehaviour
 
         if (puzzlesDone)// & puzzlesDone2)
         {
-
             cont.SetActive(true);
             restart.SetActive(false);
         }

@@ -26,7 +26,7 @@ public class puzzlePiece : MonoBehaviour
     void Start()
     {
         correctLoc = transform.position;
-        Debug.Log(correctLoc);
+        //Debug.Log(correctLoc);
         SetToRandomLocation();
 
         // Get the SpriteRenderer component and store the original sorting order
@@ -121,7 +121,7 @@ public class puzzlePiece : MonoBehaviour
         if (other.CompareTag("Piece"))
         {
             //  isOverlapping = true;
-            Debug.Log("Overlapping with another piece.");
+            //Debug.Log("Overlapping with another piece.");
 
             puzzlePiece pieceScript = other.GetComponent<puzzlePiece>();
 
@@ -139,7 +139,7 @@ public class puzzlePiece : MonoBehaviour
         if (other.CompareTag("Piece"))
         {
             // isOverlapping = false;
-            Debug.Log("No longer overlapping.");
+            //Debug.Log("No longer overlapping.");
 
 
          //   overlappingPiece = null;
@@ -150,7 +150,7 @@ public class puzzlePiece : MonoBehaviour
 {
     if (panelRect == null)
     {
-        Debug.LogError("Panel RectTransform is not assigned!");
+        //Debug.LogError("Panel RectTransform is not assigned!");
         return;
     }
 
@@ -209,7 +209,7 @@ RectTransform thisRect = GetComponent<RectTransform>();
 {
     if (panelRect == null)
     {
-        Debug.LogError("Panel RectTransform is not assigned!");
+        //Debug.LogError("Panel RectTransform is not assigned!");
         return position;
     }
 

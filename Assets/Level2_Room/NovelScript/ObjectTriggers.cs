@@ -5,24 +5,37 @@ using UnityEngine;
 public class ObjectTriggers : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
-
-    }
+    public Transform trigg;
+    public GameObject ask;
+    public LayerMask Player;
+    public GameObject spotlight;
+    public GameObject global;
+    bool explicitlyAsked = false;
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(Physics2D.OverlapCircle(trigg.position, .5f, Player)){
+                if(!explicitlyAsked){
+                    ask.SetActive(true);
+                }
+        }else{
+            ask.SetActive(false);
+            explicitlyAsked = false;
+        }
+    }
+    public void lightsOn(){
+        explicitlyAsked = true;
+        ask.SetActive(false);
+        global.SetActive(true);
+        spotlight.SetActive(false);
     }
 
+    public void no(){
+        explicitlyAsked = true;
+        ask.SetActive(false);
+    }
 
-    ///void <summary>
-    /// Sent when another object enters a trigger collider attached to this
-    /// object (2D physics only).
-    /// </summary>
-    /// <param name="other">The other Collider2D involved in this collision.</param>
     
 
 }

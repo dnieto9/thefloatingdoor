@@ -25,6 +25,8 @@ public class GameManaging : MonoBehaviour
     int gadgetNum;
     public SpriteRenderer gadgIcon;
     int toolsNum;
+    public GameObject gadgetPuzz;
+    public Button gadgetBuilder;
 
     //public UnityOnTriggerEnter2DMessageListener compTrigger2;
     // Start is called before the first frame update
@@ -35,7 +37,10 @@ public class GameManaging : MonoBehaviour
         closetIcon.color = new Color (0,0,0,1);
         gadgIcon.color = new Color(0,0,0,1);
         closetBuilder.gameObject.SetActive(false);
+        gadgetBuilder.gameObject.SetActive(false);
         closetPuzz.SetActive(false);
+        gadgetPuzz.SetActive(false);
+
         nextStep.gameObject.SetActive(false);
         gadgetNum = 0;
         toolsNum = 0;
@@ -48,6 +53,10 @@ public class GameManaging : MonoBehaviour
         if(Physics2D.OverlapCircle(player.position, 2f, ClosetPcsLM)){
             closetIcon.color = new Color (0.75f,0.75f,0.75f,255);
             closetBuilder.gameObject.SetActive(true);
+        }
+
+        if(gadgetNum >=5){
+            gadgetBuilder.gameObject.SetActive(true);
         }
 
         if(toolsNum >=2){
@@ -67,7 +76,7 @@ public class GameManaging : MonoBehaviour
     }
 
     public void loadTetris(){
-        SceneManager.LoadScene("Prototype_Tetris");
+        SceneManager.LoadScene("Level2_Tetris");
     }
 
     public void closetFinished(){
@@ -91,15 +100,17 @@ public class GameManaging : MonoBehaviour
     }
 
     public void gadgetPuzzViz(){
-
+        gadgetPuzz.SetActive(true);
     }
 
     public void gadgetPuzzInviz(){
-        
+        gadgetPuzz.SetActive(false);
     }
 
     public void gadgetPuzzFin(){
         toolsNum +=1;
+        gadgetPuzz.SetActive(false);
+        gadgetBuilder.gameObject.SetActive(false);
         gadgIcon.color = new Color(1,1,1,1);
     }
 }

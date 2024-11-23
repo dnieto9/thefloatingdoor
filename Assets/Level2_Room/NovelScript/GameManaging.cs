@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -46,7 +47,12 @@ public class GameManaging : MonoBehaviour
     }
 
     public void puzzleVisible(){
+        Debug.Log("puzzle should be working");
         closetPuzz.SetActive(true); 
+    }
+
+    public void loadTetris(){
+        SceneManager.LoadScene("Prototype_Tetris");
     }
 
 }

@@ -10,6 +10,8 @@ using UnityEngine.UIElements;
 public class puzzlePiece : MonoBehaviour
 {
     private Vector3 correctLoc;
+    public RectTransform panelRect; // Drag your panel here in the Inspector
+
     private Vector3 offset;
     private bool isDragging;
     private bool inPlace = false;
@@ -75,17 +77,12 @@ public class puzzlePiece : MonoBehaviour
 
     private Vector3 ClampToScreenBounds(Vector3 position)
     {
-        Camera cam = Camera.main;
-    float pieceWidth = GetComponent<Renderer>().bounds.size.x / 2;
-    float pieceHeight = GetComponent<Renderer>().bounds.size.y / 2;
+     RectTransform panelRect = transform.parent.GetComponent<RectTransform>();
+    Rect panelBounds = panelRect.rect;
 
-    // Get screen bounds in world coordinates
-    Vector3 screenBottomLeft = cam.ViewportToWorldPoint(new Vector3(0, 0, cam.nearClipPlane));
-    Vector3 screenTopRight = cam.ViewportToWorldPoint(new Vector3(1, 1, cam.nearClipPlane));
-
-    // Clamp the position within screen bounds
-    position.x = Mathf.Clamp(position.x, screenBottomLeft.x + pieceWidth, screenTopRight.x - pieceWidth);
-    position.y = Mathf.Clamp(position.y, screenBottomLeft.y + pieceHeight, screenTopRight.y - pieceHeight);
+    // Clamp position within panel bounds
+    position.x = Mathf.Clamp(position.x, panelBounds.xMin, panelBounds.xMax);
+    position.y = Mathf.Clamp(position.y, panelBounds.yMin, panelBounds.yMax);
 
     return position;
     }
@@ -149,22 +146,25 @@ public class puzzlePiece : MonoBehaviour
         }
     }
    
- private void SetToRandomLocation() ///dont mess with this
-     {// Get the screen bounds in world coordinates
-        Camera cam = Camera.main;
-        float pieceWidth = GetComponent<Renderer>().bounds.size.x / 2;
-        float pieceHeight = GetComponent<Renderer>().bounds.size.y / 2;
+ private void SetToRandomLocation()
+{
+    if (panelRect == null)
+    {
+        Debug.LogError("Panel RectTransform is not assigned!");
+        return;
+    }
 
-        Vector3 screenBottomLeft = cam.ViewportToWorldPoint(new Vector3(0, 0, cam.nearClipPlane));
-        Vector3 screenTopRight = cam.ViewportToWorldPoint(new Vector3(1, 1, cam.nearClipPlane));
+    // Get the local bounds of the panel
+    Rect panelBounds = panelRect.rect;
 
-        // Generate random x and y positions within the screen bounds, accounting for piece size
-        float randomX = UnityEngine.Random.Range(screenBottomLeft.x + pieceWidth, screenTopRight.x - pieceWidth);
-        float randomY = UnityEngine.Random.Range(screenBottomLeft.y + pieceHeight, screenTopRight.y - pieceHeight);
+    // Generate random positions within these bounds
+    float randomX = UnityEngine.Random.Range(panelBounds.xMin, panelBounds.xMax);
+    float randomY = UnityEngine.Random.Range(panelBounds.yMin, panelBounds.yMax);
 
-        // Set the piece position to the random location
-        transform.position = new Vector3(randomX, randomY, transform.position.z);
-     }
+    // Set position, converting from local to world space
+    Vector3 localPos = new Vector3(randomX, randomY, transform.position.z);
+    transform.position = panelRect.TransformPoint(localPos);
+}
 
     private void correctOthersLoc()
     {
@@ -184,47 +184,56 @@ public class puzzlePiece : MonoBehaviour
     private void checkInPlace(puzzlePiece other) /// check if connected with other
     {
         
+RectTransform thisRect = GetComponent<RectTransform>();
+    RectTransform otherRect = other.GetComponent<RectTransform>();
 
-// Calculate the difference between the current positions of the two pieces
-    float xDifference = Mathf.Abs(transform.position.x - other.transform.position.x);
-    float yDifference = Mathf.Abs(transform.position.y - other.transform.position.y);
+    // Calculate the difference in anchored positions
+    Vector2 positionDifference = thisRect.anchoredPosition - otherRect.anchoredPosition;
+    Vector2 correctDifference = correctLoc - other.correctLoc;
 
-    // Calculate the difference between the correct positions for alignment check
-    float correctX = Mathf.Abs(correctLoc.x - other.correctLoc.x);
-    float correctY = Mathf.Abs(correctLoc.y - other.correctLoc.y);
+    float tolerance = 10f; // Adjust for UI space
 
-    // Define a small tolerance value for alignment
-    float tolerance = 0.1f; 
-
-    // Check if the pieces are close enough to each other and aligned correctly
-    if (xDifference <= correctX + tolerance && yDifference <= correctY + tolerance)
+    // Check if the pieces are close enough and aligned
+    if (Mathf.Abs(positionDifference.x - correctDifference.x) <= tolerance &&
+        Mathf.Abs(positionDifference.y - correctDifference.y) <= tolerance)
     {
-        // If aligned within the correct distance, add the other piece to the connected pieces list
         connectedPieces.Add(other);
         other.addConnections(this);
         connected = true;
-
-        List<puzzlePiece> newConnects = other.connections();
-        if(newConnects.Count != 0){
-          for(int i = 0; i < newConnects.Count; i++) {
-            connectedPieces.Add(newConnects[i]);
-        }
-        } 
-        if(connectedPieces.Count != 0){
-            for(int i = 0; i < connectedPieces.Count; i++) {
-                other.addConnections(connectedPieces[i]);
-       
-        }
-        }   
-        other.connected = true;
-        
-        
         inPlace = true;
-        
     }
 
     }
-  
+
+    private Vector3 ClampToPanelBounds(Vector3 position)
+{
+    if (panelRect == null)
+    {
+        Debug.LogError("Panel RectTransform is not assigned!");
+        return position;
+    }
+
+    // Get the bounds of the panel
+    Vector2 panelMin = panelRect.rect.min;
+    Vector2 panelMax = panelRect.rect.max;
+
+    // Convert local panel bounds to world space
+    Vector3 worldMin = panelRect.TransformPoint(panelMin);
+    Vector3 worldMax = panelRect.TransformPoint(panelMax);
+
+    // Clamp the position to stay within the panel
+    position.x = Mathf.Clamp(position.x, worldMin.x, worldMax.x);
+    position.y = Mathf.Clamp(position.y, worldMin.y, worldMax.y);
+
+    return position;
+}
+  private bool IsWithinPanelBounds(RectTransform panelRect, RectTransform pieceRect)
+{
+    Rect panelBounds = panelRect.rect;
+    Rect pieceBounds = pieceRect.rect;
+
+    return panelBounds.Overlaps(pieceBounds);
+}
 
     public bool done()
     {

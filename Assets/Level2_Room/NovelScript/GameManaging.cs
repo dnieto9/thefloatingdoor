@@ -27,6 +27,7 @@ public class GameManaging : MonoBehaviour
     int toolsNum;
     public GameObject gadgetPuzz;
     public Button gadgetBuilder;
+    public GameObject startingPan;
 
     //public UnityOnTriggerEnter2DMessageListener compTrigger2;
     // Start is called before the first frame update
@@ -112,5 +113,9 @@ public class GameManaging : MonoBehaviour
         gadgetPuzz.SetActive(false);
         gadgetBuilder.gameObject.SetActive(false);
         gadgIcon.color = new Color(1,1,1,1);
+    }
+
+    public void gotIt(){
+        startingPan.SetActive(false);
     }
 }

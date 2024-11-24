@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorHandler : MonoBehaviour
 {
@@ -10,7 +11,13 @@ public class DoorHandler : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            panel.SetActive(true);
+            if(SceneManager.GetActiveScene().name == "Prototype_Tetris"){
+                SceneManager.LoadScene("Gadgets");
+            }
+            else if (SceneManager.GetActiveScene().name == "Level2_Tetris"){
+                panel.SetActive(true);
+            }
+            
         }
     }
 }

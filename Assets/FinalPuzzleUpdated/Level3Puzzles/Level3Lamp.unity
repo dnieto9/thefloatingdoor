@@ -122,7 +122,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &301264108
+--- !u!1 &297406914
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,22 +130,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 301264110}
-  - component: {fileID: 301264109}
+  - component: {fileID: 297406916}
+  - component: {fileID: 297406915}
   m_Layer: 0
-  m_Name: original
+  m_Name: lamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!212 &301264109
+--- !u!212 &297406915
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301264108}
+  m_GameObject: {fileID: 297406914}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -179,28 +179,28 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4882a1359a9da4365b23e2910e036b98, type: 3}
+  m_SortingOrder: 6
+  m_Sprite: {fileID: 21300000, guid: 17515812e22e14f9b8b520da58834c6a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.09, y: 0.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &301264110
+--- !u!4 &297406916
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301264108}
+  m_GameObject: {fileID: 297406914}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -0.04, z: 0}
+  m_LocalPosition: {x: 0.05, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -435,7 +435,7 @@ RectTransform:
   m_GameObject: {fileID: 791242563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4879518, y: 0.72265625, z: 1}
+  m_LocalScale: {x: 0.33546686, y: 0.72265625, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1919510068}
@@ -646,9 +646,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildPanel: {fileID: 0}
-  sourceSprite: {fileID: 21300000, guid: 4882a1359a9da4365b23e2910e036b98, type: 3}
-  finalSprite: {fileID: 21300000, guid: 4882a1359a9da4365b23e2910e036b98, type: 3}
-  gridSize: 3
+  sourceSprite: {fileID: 21300000, guid: 17515812e22e14f9b8b520da58834c6a, type: 3}
+  finalSprite: {fileID: 21300000, guid: 17515812e22e14f9b8b520da58834c6a, type: 3}
+  gridSize: 2
   panelRect: {fileID: 1442228513}
   cont: {fileID: 886209873}
   nextScene: 
@@ -946,4 +946,4 @@ SceneRoots:
   - {fileID: 371070021}
   - {fileID: 1919510068}
   - {fileID: 918507832}
-  - {fileID: 301264110}
+  - {fileID: 297406916}

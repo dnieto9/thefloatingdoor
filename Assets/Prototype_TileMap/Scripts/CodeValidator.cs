@@ -23,7 +23,7 @@ public class CodeValidator : MonoBehaviour
     {
         if (codeInputField.text == secretCode)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(5);
         }
         else
         {

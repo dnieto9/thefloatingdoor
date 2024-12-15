@@ -3329,6 +3329,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &828730258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7387427733301301071, guid: 676876b8ab0bf9e4a9f5ad4db319f663, type: 3}
+  m_PrefabInstance: {fileID: 1889342858}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &858080153
 GameObject:
   m_ObjectHideFlags: 0
@@ -3999,8 +4004,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+  m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5671,6 +5676,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1306538005 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 7173500675049369138, guid: 676876b8ab0bf9e4a9f5ad4db319f663, type: 3}
+  m_PrefabInstance: {fileID: 1889342858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1306538006 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7077278895640396397, guid: 676876b8ab0bf9e4a9f5ad4db319f663, type: 3}
+  m_PrefabInstance: {fileID: 1889342858}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1321501177
 GameObject:
   m_ObjectHideFlags: 0
@@ -37017,8 +37032,8 @@ MonoBehaviour:
     click enter when
     you''re done with input'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+  m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -37137,6 +37152,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianoNotes: {fileID: 1877599566}
+  pPuzz: {fileID: 0}
+  pPuzzMan: {fileID: 0}
+  playerRB: {fileID: 1306538005}
+  player: {fileID: 828730258}
+  playerColl: {fileID: 1306538006}
 --- !u!1 &1590478847
 GameObject:
   m_ObjectHideFlags: 0
@@ -38599,7 +38619,7 @@ MonoBehaviour:
   m_CaretWidth: 1
   m_ReadOnly: 0
   m_RichText: 1
-  m_GlobalFontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_GlobalFontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_OnFocusSelectAll: 1
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1

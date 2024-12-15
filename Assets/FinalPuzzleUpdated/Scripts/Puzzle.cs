@@ -85,7 +85,7 @@ private void CreatePuzzle()
             sr.sprite = pieceSprite;
 
             // Set the sorting order (optional, e.g., 5)
-            sr.sortingOrder = 5;
+            sr.sortingOrder = 7;
 
             // Add the BoxCollider2D
             BoxCollider2D collider = gamePiece.AddComponent<BoxCollider2D>();
@@ -250,7 +250,7 @@ public void CheckPuzzleCompletion()
         // Add a SpriteRenderer to display the final sprite
         SpriteRenderer sr = finalPuzzle.AddComponent<SpriteRenderer>();
         sr.sprite = finalSprite;
-        sr.sortingOrder = 5;
+        sr.sortingOrder = 7;
 
         // Optionally, position the final sprite in the correct location
         finalPuzzle.transform.position = new Vector3(0, 0, 0); // Set position as needed

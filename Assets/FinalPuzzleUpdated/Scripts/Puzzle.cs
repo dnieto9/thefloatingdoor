@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Puzzle : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Puzzle : MonoBehaviour
     public int gridSize = 4; // Number of rows and columns
     public RectTransform panelRect; // Panel to confine pieces
     public Button cont;
+    public String nextScene;
 
     private Sprite[,] puzzlePieces; // Array to hold the sprite pieces
     private GameObject[,] pieceObjects; // Array to hold the GameObjects for pieces
@@ -49,6 +51,10 @@ public class Puzzle : MonoBehaviour
     }
 
     // Other methods like CreatePuzzle(), CheckPuzzleCompletion(), etc. remain unchanged
+   public void NextLevel(){
+    SceneManager.LoadScene(nextScene);
+
+   }
 private void CreatePuzzle()
 {
     // Use texture of the source sprite

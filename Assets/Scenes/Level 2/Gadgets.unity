@@ -23875,13 +23875,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b58e59e1876486aaf167e02980f2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildPanel: {fileID: 0}
-  sourceSprite: {fileID: -1573592603, guid: d4b8d4ff0d4a446d198334ff3b01ad14, type: 3}
-  finalSprite: {fileID: -1573592603, guid: d4b8d4ff0d4a446d198334ff3b01ad14, type: 3}
-  gridSize: 2
-  panelRect: {fileID: 457269644}
-  cont: {fileID: 617997486}
-  finalSpriteDisplayed: 0
 --- !u!1 &1912520853
 GameObject:
   m_ObjectHideFlags: 0

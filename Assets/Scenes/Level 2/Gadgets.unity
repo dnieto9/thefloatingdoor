@@ -181,8 +181,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: BUILD
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -794,8 +799,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Yes!
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1587,8 +1597,13 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1867,8 +1882,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Add to inventory?
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2512,8 +2532,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Yes!
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2646,8 +2671,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Add to inventory?
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3432,8 +3462,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Continue
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4480,8 +4515,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Add to inventory?
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6101,6 +6141,134 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &937939665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 937939667}
+  - component: {fileID: 937939666}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &937939666
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937939665}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b9b57908d65c5439a910aee8b8046792, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &937939667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937939665}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.3776562, y: -0.50143796, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &949520656
 GameObject:
   m_ObjectHideFlags: 0
@@ -7710,8 +7878,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Add to inventory?
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7919,8 +8092,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: No :(
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8133,8 +8311,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: No :(
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8632,8 +8815,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: No :(
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9736,8 +9924,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Yes!
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10849,8 +11042,13 @@ MonoBehaviour:
     floating door. Collect puzzle pieces and build the mystery objects in your inventory,
     and you'll be building in no time.
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11579,8 +11777,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Add to inventory?
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11936,8 +12139,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Yes!
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12117,8 +12325,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: No :(
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12474,8 +12687,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Yes!
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12608,8 +12826,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Turn on lights?
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -24265,8 +24488,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: No :(
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -24399,8 +24627,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Close
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -24515,9 +24748,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1882177104}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2b58e59e1876486aaf167e02980f2bd, type: 3}
+  m_Script: {fileID: 11500000, guid: bb1508b3d174e40438374c0b9e590ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieces:
+  - {fileID: 328505345}
+  - {fileID: 673806485}
+  - {fileID: 83036039}
+  - {fileID: 2070516333}
+  - {fileID: 1352495986}
+  - {fileID: 1509859589}
+  - {fileID: 706396152}
+  restart: {fileID: 442741032}
+  cont: {fileID: 617997484}
+  nextSceneName: 
 --- !u!1 &1912520853
 GameObject:
   m_ObjectHideFlags: 0
@@ -24932,8 +25176,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Got it!
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26166,8 +26415,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: No :(
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26300,8 +26554,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: BUILD
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26788,8 +27047,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: Yes!
   m_isRightToLeft: 0
+<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -27010,3 +27274,4 @@ SceneRoots:
   - {fileID: 766605039}
   - {fileID: 1362247022}
   - {fileID: 420991106}
+  - {fileID: 937939667}

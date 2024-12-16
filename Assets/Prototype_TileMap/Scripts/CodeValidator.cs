@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
-using System;
 
 public class CodeValidator : MonoBehaviour
 {
@@ -24,16 +23,12 @@ public class CodeValidator : MonoBehaviour
     {
         if (codeInputField.text == secretCode)
         {
-            Debug.Log(codeInputField.text);
-            SceneManager.LoadScene("ClockPuzzle");
-
+            SceneManager.LoadScene(5);
         }
         else
         {
             codeInputField.text = ""; 
         }
     }
-
-    
 }
 

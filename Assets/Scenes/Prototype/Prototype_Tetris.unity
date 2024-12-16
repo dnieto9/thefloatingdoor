@@ -356,8 +356,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+  m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1792,8 +1792,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: OK
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+  m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2953,7 +2953,7 @@ GameObject:
   - component: {fileID: 1124853419}
   - component: {fileID: 1124853418}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4488,8 +4488,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Finished \nbuilding"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+  m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7376,8 +7376,8 @@ MonoBehaviour:
   m_text: "Grab objects to build a staircase leading to the Floating Door. Use A
     and D to rotate the objects. \nReach the door to complete the level!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+  m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8068,8 +8068,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Important
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
+  m_sharedMaterial: {fileID: 8481186517671767195, guid: 841c7d82aebec4f8f85fc37e221a8b74, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

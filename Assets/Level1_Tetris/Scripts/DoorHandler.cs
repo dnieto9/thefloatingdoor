@@ -86,7 +86,7 @@ public class DoorHandler : MonoBehaviour
         }
         else if (currentScene == "Level2_Tetris")
         {
-            SceneManager.LoadScene("Level3_Tetris");
+            SceneManager.LoadScene("RedRoom1");
         }
         else if (currentScene == "Level3_Tetris")
         {

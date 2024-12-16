@@ -46,11 +46,16 @@ public class RRManager : MonoBehaviour
             Debug.Log("correct!");
             // pPuzz.SetActive(true);
             // pPuzzMan.SetActive(true);
-            SceneManager.LoadScene("Level3LongPiano")
+            SceneManager.LoadScene("Level3LongPiano");
             pPuzzOn = true;
         }else{
             pianoNotes.text = "";
         }
+    }
+
+    public void LoadLanternPuzz(){
+        Debug.Log("should load Level3Lamp");
+        SceneManager.LoadScene("Level3Lamp");
     }
 
     

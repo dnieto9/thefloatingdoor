@@ -29,5 +29,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FinalPuzzleUpdated/Level1Puzzle/ClockPuzzle.unity
     guid: c25ec477b0b034a3198a0d20f3b06325
+  - enabled: 1
+    path: Assets/Scenes/Level3/TM/RedRoom2.unity
+    guid: 1f92512d996f40d48aded2a2db0e46a6
+  - enabled: 1
+    path: Assets/Scenes/Level3/TM/RedRoom1.unity
+    guid: 739826e0d76ae2c49acf02b9c7bf8927
+  - enabled: 1
+    path: Assets/FinalPuzzleUpdated/Level3Puzzles/Level3Lamp.unity
+    guid: 715a1201552a04f76a060bd9b3d65508
+  - enabled: 1
+    path: Assets/FinalPuzzleUpdated/Level3Puzzles/Level3LongPiano.unity
+    guid: c7b155629770c4b1f973b9da2721de6c
+  - enabled: 1
+    path: Assets/Scenes/Level3_Tetris.unity
+    guid: 144bd5417c9154ac6bd4487dca74f8f0
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: a8a4fe3e73c4e45efadcf070dfa341f4, type: 2}

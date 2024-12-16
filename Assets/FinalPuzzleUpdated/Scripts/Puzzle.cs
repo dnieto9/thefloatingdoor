@@ -41,6 +41,8 @@ public class Puzzle : MonoBehaviour
         puzzlePieces = new Sprite[gridSize, gridSize];
         pieceObjects = new GameObject[gridSize, gridSize];
         puzzleOrigins = new Vector3[gridSize, gridSize];
+        
+        cont.gameObject.SetActive(false);
 
         CreatePuzzle();
     }

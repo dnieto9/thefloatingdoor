@@ -14,7 +14,7 @@ public class MoveScript : MonoBehaviour
 
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
-    private bool isGrounded = false;
+    //private bool isGrounded = false;
     private Rigidbody2D rb;
 
     Animator animator;

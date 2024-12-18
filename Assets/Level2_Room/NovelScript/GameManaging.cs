@@ -118,4 +118,8 @@ public class GameManaging : MonoBehaviour
     public void gotIt(){
         startingPan.SetActive(false);
     }
+
+    public void mainMendu(){
+        SceneManager.LoadScene("MainMenu");
+    }
 }

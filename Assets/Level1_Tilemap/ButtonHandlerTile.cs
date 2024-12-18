@@ -22,7 +22,7 @@ public class ButtonHandlerTile : MonoBehaviour
     }
     public void RestartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("MainMenu");
     }
     public void OkWife()
     {

@@ -10,7 +10,9 @@ public class RRManager : MonoBehaviour
     public TMP_InputField pianoNotes;
     // public GameObject pPuzz;
     // public GameObject pPuzzMan;
+    
     private bool pPuzzOn = false;
+    
     private string notes = "daeadcfgbd";
     public Rigidbody2D playerRB;
     public GameObject player;
@@ -56,6 +58,10 @@ public class RRManager : MonoBehaviour
     public void LoadLanternPuzz(){
         Debug.Log("should load Level3Lamp");
         SceneManager.LoadScene("Level3Lamp");
+    }
+
+    public void mainMenu(){
+        SceneManager.LoadScene("MainMenu");
     }
 
     

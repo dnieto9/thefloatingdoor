@@ -23,7 +23,7 @@ public class CodeValidator : MonoBehaviour
     {
         if (codeInputField.text == secretCode)
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene("ClockPuzzle");
         }
         else
         {
